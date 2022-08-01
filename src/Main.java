@@ -12,5 +12,11 @@ public class Main {
 
         int carpim = hm.carp(5,6);
         System.out.println("Carpim : "+carpim);
+
+        String bolum = hm.bolmeYap(10,2);
+        if(!bolum.equals("")){
+            System.out.println("Bolum : "+bolum);
+        }
+
     }
 }
