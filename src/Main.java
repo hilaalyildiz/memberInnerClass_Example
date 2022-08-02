@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args){
         hesapMakinesi hm = new hesapMakinesi();
@@ -18,5 +20,12 @@ public class Main {
             System.out.println("Bolum : "+bolum);
         }
 
+        hesapMakinesi hm2 = new hesapMakinesi(){
+            @Override
+            public int carp(int i, int j) {
+                System.out.println("Anonymous inner class ile carpma fonksiyonu");
+                return i*j;
+            }
+        };
     }
 }
